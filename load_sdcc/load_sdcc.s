@@ -5,7 +5,7 @@
 .set __SREG__, 63
 .set __SP_H__, 62
 .set __SP_L__, 61
-	.file	"load.c"
+	.file	"load_sdcc.c"
 	.text
 	.globl	main                            ; -- Begin function main
 	.p2align	1

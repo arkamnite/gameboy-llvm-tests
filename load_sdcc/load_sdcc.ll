@@ -1,5 +1,5 @@
-; ModuleID = './load/load.bc'
-source_filename = "load.c"
+; ModuleID = './load_sdcc/load_sdcc.bc'
+source_filename = "load_sdcc.c"
 target datalayout = "e-m:o-i64:64-i128:128-n32:64-S128"
 target triple = "arm64-apple-macosx12.0.0"
 

@@ -1,0 +1,51 @@
+	.section	__TEXT,__text,regular,pure_instructions
+	.build_version macos, 13, 0
+.set __tmp_reg__, 0
+.set __zero_reg__, 1
+.set __SREG__, 63
+.set __SP_H__, 62
+.set __SP_L__, 61
+	.file	"test.c"
+	.text
+	.globl	n                               ; -- Begin function n
+	.p2align	1
+	.type	n,@function
+n:                                      ; @n
+; %bb.0:                                ; %entry
+	ld	b, a
+	inc	b
+	ld	c, b
+	ld	a, b
+	add	a, a
+	sbc	a, a
+	ld	b, a
+	ret
+.Lfunc_end0:
+	.size	n, .Lfunc_end0-n
+                                        ; -- End function
+	.globl	g                               ; -- Begin function g
+	.p2align	1
+	.type	g,@function
+g:                                      ; @g
+; %bb.0:                                ; %entry
+	; We are going to perform ADD C, Imm8
+	ld	b, 3							; LD B Imm8
+	ld	c, a							; LD C, y
+	ld	a, b							; 
+	add	a, c							; ADD A, C
+	ld	c, a							; LD C, A to complete ADD C, B
+	ld	c, c							; Store low byte
+	ld	a, c
+	add	a, a							; Push sign into carry
+	sbc	a, a							; Turn into 0 or -1 via C - C - Carry
+	ld	b, a
+	ret									; RET BC
+.Lfunc_end1:
+	.size	g, .Lfunc_end1-g
+                                        ; -- End function
+	; Declaring this symbol tells the CRT that it should
+	;copy all variables from program memory to RAM on startup
+	.globl	__do_copy_data
+	; Declaring this symbol tells the CRT that it should
+	;clear the zeroed data section on startup
+	.globl	__do_clear_bss

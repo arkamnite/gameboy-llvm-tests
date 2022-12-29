@@ -1,8 +1,10 @@
 int hello_global = 0;
 
-int addition_test(int x);
+int addition(int x) __attribute__((ms_abi));
 
-int addition_two(int x);
+int addition_test(int x) __attribute__((sdcc_v0));
+
+int addition_two(int x) __attribute__((sdcc_v1));
 
 int main() {
     char y = 56;
