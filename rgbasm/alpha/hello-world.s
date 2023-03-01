@@ -60,8 +60,61 @@ CopyTilemap:
 	ld a, %11100100
 	ld [rBGP], a
 
+	; Initialise interrupts
+	; ei
 Done:
+	; Write ACTION or DIRECTION
+	; Write 0 to bit 4 of FF00, to select DIRECTION
+	ld a, P1F_GET_DPAD
+	ld [rP1], a
+	; Read bits 3 to 0 and move the stuff accordingly
+	ld a, [rP1]
+	ld a, [rP1]
+	ld a, [rP1]
+	; 3 = down
+	cp a, P1F_3
+	jr z, Down
+	cp a, P1F_2
+	jr z, Up
+	jr nz, Done
+Left:
+	ld a, [rSCX]
+	dec a
+	ld [rSCX], a
+	jp Await
+Right:
+	ld a, [rSCX]
+	inc a
+	ld [rSCX], a
+	jp Await
+Up:
+	ld a, [rSCY]
+	dec a
+	ld [rSCY], a
+	jp Await
+Down:
+	; Scroll the background down if we find the down key
+	; has been pressed.
+	ld a, [rSCY]
+	inc a
+	ld [rSCY], a
+	jp Await
+
+Await:
 	jp Done
+	; Find a way to avoid the funny scanline business.
+	; read off the STAT register to get more information
+	ld a, [rSTAT]
+	ld b, a ; Store STAT in b
+	ld a, STATF_MODE01
+	and a, b
+	jr nz, Done
+	jp Await
+	; 2 = up
+	; 1 = left
+	; 0 = right
+
+
 
 
 SECTION "Tile data", ROM0

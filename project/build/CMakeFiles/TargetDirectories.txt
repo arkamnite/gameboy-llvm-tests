@@ -1,0 +1,5 @@
+/Users/akram/Documents/DCS/bsc-project/test_files/project/build/CMakeFiles/edit_cache.dir
+/Users/akram/Documents/DCS/bsc-project/test_files/project/build/CMakeFiles/rebuild_cache.dir
+/Users/akram/Documents/DCS/bsc-project/test_files/project/build/src/CMakeFiles/ExampleProjectFile.dir
+/Users/akram/Documents/DCS/bsc-project/test_files/project/build/src/CMakeFiles/edit_cache.dir
+/Users/akram/Documents/DCS/bsc-project/test_files/project/build/src/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,809 @@
+*** IR Dump After Pre-ISel Intrinsic Lowering (pre-isel-intrinsic-lowering) ***
+; ModuleID = './test/test.bc'
+source_filename = "test.c"
+target datalayout = "e-P1-p:16:8-i8:8-i16:8-i32:8-i64:8-f32:8-f64:8-n8-a:8"
+target triple = "gameboy"
+
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+
+attributes #0 = { mustprogress nofree norecurse nosync nounwind readnone willreturn "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" }
+
+!llvm.module.flags = !{!0, !1}
+!llvm.ident = !{!2}
+
+!0 = !{i32 1, !"wchar_size", i32 2}
+!1 = !{i32 7, !"frame-pointer", i32 2}
+!2 = !{!"clang version 15.0.0 (https://github.com/arkamnite/llvm-project df50430326f592e5878ce70a11b4a95dc50a6d85)"}
+*** IR Dump After AVR Shift Expansion (avr-shift-expand) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Module Verifier (verify) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Canonicalize natural loops (loop-simplify) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Merge contiguous icmps into a memcmp (mergeicmps) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Expand memcmp() to load/stores (expandmemcmp) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Lower Garbage Collection Instructions (gc-lowering) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Shadow Stack GC Lowering (shadow-stack-gc-lowering) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Lower constant intrinsics (lower-constant-intrinsics) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Remove unreachable blocks from the CFG (unreachableblockelim) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Constant Hoisting (consthoist) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Replace intrinsics with calls to vector library (replace-with-veclib) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Partially inline calls to library functions (partially-inline-libcalls) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Expand vector predication intrinsics (expandvp) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Scalarize Masked Memory Intrinsics (scalarize-masked-mem-intrin) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Expand reduction intrinsics (expand-reductions) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After TLS Variable Hoist (tlshoist) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After CodeGen Prepare (codegenprepare) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Lower invoke and unwind, for unwindless code generators (lowerinvoke) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Remove unreachable blocks from the CFG (unreachableblockelim) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Safe Stack instrumentation pass (safe-stack) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+*** IR Dump After Module Verifier (verify) ***
+; Function Attrs: mustprogress nofree norecurse nosync nounwind readnone willreturn
+define dso_local i8 @g(i8 noundef %x) local_unnamed_addr addrspace(0) #0 {
+entry:
+  %add = add i8 %x, 10
+  ret i8 %add
+}
+# *** IR Dump After Finalize ISel and expand pseudo-instructions (finalize-isel) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Early Tail Duplication (early-tailduplication) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Optimize machine instruction PHIs (opt-phis) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Slot index numbering (slotindexes) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %0:ld8 = COPY $r24
+32B	  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+48B	  $r24 = COPY %1:ld8
+64B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Merge disjoint stack slots (stack-coloring) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Local Stack Slot Allocation (localstackalloc) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Remove dead machine instructions (dead-mi-elimination) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Early Machine Loop Invariant Code Motion (early-machinelicm) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Machine Common Subexpression Elimination (machine-cse) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Machine code sinking (machine-sink) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Peephole Optimizations (peephole-opt) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Remove dead machine instructions (dead-mi-elimination) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Detect Dead Lanes (detect-dead-lanes) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Process Implicit Definitions (processimpdefs) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Remove unreachable machine basic blocks (unreachable-mbb-elimination) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY $r24
+  %1:ld8 = SUBIRdK %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY %1:ld8
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Live Variable Analysis (livevars) ***:
+# Machine code for function g: IsSSA, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY killed $r24
+  %1:ld8 = SUBIRdK killed %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY killed %1:ld8
+  RET implicit killed $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Eliminate PHI nodes for register allocation (phi-node-elimination) ***:
+# Machine code for function g: NoPHIs, TracksLiveness
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY killed $r24
+  %1:ld8 = SUBIRdK killed %0:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY killed %1:ld8
+  RET implicit killed $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Two-Address instruction pass (twoaddressinstruction) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten
+Function Live Ins: $r24 in %0
+
+bb.0.entry:
+  liveins: $r24
+  %0:ld8 = COPY killed $r24
+  %1:ld8 = COPY killed %0:ld8
+  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+  $r24 = COPY killed %1:ld8
+  RET implicit killed $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Slot index numbering (slotindexes) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %0:ld8 = COPY killed $r24
+32B	  %1:ld8 = COPY killed %0:ld8
+48B	  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+64B	  $r24 = COPY killed %1:ld8
+80B	  RET implicit killed $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Live Interval Analysis (liveintervals) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %0:ld8 = COPY $r24
+32B	  %1:ld8 = COPY %0:ld8
+48B	  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+64B	  $r24 = COPY %1:ld8
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Simple Register Coalescing (simple-register-coalescing) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %1:ld8 = COPY $r24
+48B	  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+64B	  $r24 = COPY %1:ld8
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Rename Disconnected Subregister Components (rename-independent-subregs) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %1:ld8 = COPY $r24
+48B	  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+64B	  $r24 = COPY %1:ld8
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Machine Instruction Scheduler (machine-scheduler) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %1:ld8 = COPY $r24
+48B	  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+64B	  $r24 = COPY %1:ld8
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Debug Variable Analysis (livedebugvars) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %1:ld8 = COPY $r24
+48B	  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+64B	  $r24 = COPY %1:ld8
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Live Stack Slot Analysis (livestacks) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %1:ld8 = COPY $r24
+48B	  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+64B	  $r24 = COPY %1:ld8
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Virtual Register Map (virtregmap) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %1:ld8 = COPY $r24
+48B	  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+64B	  $r24 = COPY %1:ld8
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Live Register Matrix (liveregmatrix) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %1:ld8 = COPY $r24
+48B	  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+64B	  $r24 = COPY %1:ld8
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Greedy Register Allocator (greedy) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24 in %0
+
+0B	bb.0.entry:
+	  liveins: $r24
+16B	  %1:ld8 = COPY $r24
+48B	  %1:ld8 = SUBIRdK %1:ld8(tied-def 0), -10, implicit-def dead $sreg
+64B	  $r24 = COPY %1:ld8
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Virtual Register Rewriter (virtregrewriter) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+0B	bb.0.entry:
+	  liveins: $r24
+48B	  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Register Allocation Pass Scoring (regallocscoringpass) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+0B	bb.0.entry:
+	  liveins: $r24
+48B	  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Stack Slot Coloring (stack-slot-coloring) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+0B	bb.0.entry:
+	  liveins: $r24
+48B	  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+80B	  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Machine Copy Propagation Pass (machine-cp) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Machine Loop Invariant Code Motion (machinelicm) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Remove Redundant DEBUG_VALUE analysis (removeredundantdebugvalues) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Fixup Statepoint Caller Saved (fixup-statepoint-caller-saved) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After PostRA Machine Sink (postra-machine-sink) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Shrink Wrapping analysis (shrink-wrap) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Prologue/Epilogue Insertion & Frame Finalization (prologepilog) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Control Flow Optimizer (branch-folder) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Tail Duplication (tailduplication) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Machine Copy Propagation Pass (machine-cp) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Post-RA pseudo instruction expansion pass (postrapseudos) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After AVR pseudo instruction expansion pass (avr-expand-pseudo) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Post RA top-down list latency scheduler (post-RA-sched) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Analyze Machine Code For Garbage Collection (gc-analysis) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Branch Probability Basic Block Placement (block-placement) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Insert fentry calls (fentry-insert) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Insert XRay ops (xray-instrumentation) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Implement the 'patchable-function' attribute (patchable-function) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Branch relaxation pass (branch-relaxation) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Contiguously Lay Out Funclets (funclet-layout) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After StackMap Liveness Analysis (stackmap-liveness) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.
+
+# *** IR Dump After Live DEBUG_VALUE analysis (livedebugvalues) ***:
+# Machine code for function g: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Function Live Ins: $r24
+
+bb.0.entry:
+  liveins: $r24
+  $r24 = SUBIRdK killed $r24(tied-def 0), -10, implicit-def dead $sreg
+  RET implicit $r24
+
+# End machine code for function g.

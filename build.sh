@@ -18,4 +18,7 @@ mkdir $1
 # fi
 
 # Produce the executable file.
+rgbasm ./$1/$1.asm -o $1/$1.o
+rgblink -o ./test/test.gb ./test/test.o
+rgbfix -v -p 0xFF ./test/test.gb
 # ./../llvm-project/build/bin/llc -mtriple="gameboy-none-none" -O2 -filetype=obj ./$1/$1.bc -o ./$1/$1.o
